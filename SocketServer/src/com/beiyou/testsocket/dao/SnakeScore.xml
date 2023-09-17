@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sql-map
+    PUBLIC "-//iBATIS.com//DTD SQL Map 1.0//EN"
+    "http://www.ibatis.com/dtd/sql-map.dtd">
+<sql-map name="SnakeScore">
+	<result-map name="result" class="com.beiyou.testsocket.entity.SnakeScore">
+		<property name="id" column="id"/>
+		<property name="snakename" column="snakename"/>
+		<property name="score" column="score"/>
+	</result-map>
+	
+	<mapped-statement name="getAllSnakeScore" result-map="result">
+		<![CDATA[
+		select id,
+			snakename,
+			score
+			from usergamescore
+		]]>
+	</mapped-statement>
+	
+	<mapped-statement name="getSnakeByName" result-map="result">
+		<![CDATA[
+		select id,
+			snakename,
+			score
+			from usergamescore
+			where snakename=#value#
+		]]>
+	</mapped-statement>
+	
+	<mapped-statement name="insertSnakeScoreByNameAndScore" >
+		<![CDATA[
+		insert into usergamescore (snakename, score) values (#snakename#,#score#)
+		]]>
+	</mapped-statement>
+	
+	<mapped-statement name="updateSnakeScoreByNameAndScore" >
+		<![CDATA[
+		update usergamescore set score=#score# where snakename=#snakename#
+		]]>
+	</mapped-statement>
+	
+<!-- 	<mapped-statement name="getUserByNameAndPwl" result-map="result"> -->
+<!-- 		<![CDATA[ -->
+<!-- 		select id, -->
+<!-- 			username, -->
+<!-- 			password, -->
+<!-- 			nickname -->
+<!-- 			from user -->
+<!-- 			where username=#value# AND password=#password# -->
+<!-- 		]]> -->
+<!-- 	</mapped-statement> -->
+	
+<!-- 	<mapped-statement name="setUserByName"> -->
+<!-- 		<![CDATA[ -->
+<!-- 		update user -->
+<!-- 		 set password = #pass# -->
+<!-- 		 where username = #name# -->
+<!-- 		]]> -->
+<!-- 	</mapped-statement> -->
+</sql-map>

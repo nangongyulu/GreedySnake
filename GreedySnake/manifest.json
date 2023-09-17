@@ -1,0 +1,39 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/game/game.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/socket/socket.js",
+		"libs/modules/promise/promise.js"
+	],
+	"game": [
+		"bin-debug/gameclient/food/FoodList.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/Main.js",
+		"bin-debug/Platform.js",
+		"bin-debug/test.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/gameclient/engine/Clock.js",
+		"bin-debug/gameclient/engine/CollisionDetection.js",
+		"bin-debug/gameclient/engine/GameLogic.js",
+		"bin-debug/gameclient/engine/Score.js",
+		"bin-debug/gameclient/engine/StartGame.js",
+		"bin-debug/gameclient/food/Food.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/gameclient/snake/AISnake.js",
+		"bin-debug/gameclient/snake/HeadAnime.js",
+		"bin-debug/gameclient/snake/JoyStick.js",
+		"bin-debug/gameclient/snake/MoveAngle.js",
+		"bin-debug/gameclient/snake/Snake.js",
+		"bin-debug/gameclient/socketdata/SendXmlHelper.js",
+		"bin-debug/gameclient/socketdata/XmlDataHelper.js",
+		"bin-debug/gameclient/ui/GameUI.js",
+		"bin-debug/gameclient/ui/LoginUI.js",
+		"bin-debug/gameclient/ui/RegisterUI.js",
+		"bin-debug/gameclient/util/ChatUtil.js"
+	]
+}
